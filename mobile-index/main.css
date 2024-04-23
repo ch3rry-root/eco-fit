@@ -1,0 +1,214 @@
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color de texto */
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.6; /* Espacio texto*/
+}
+
+h1, h2, h3 {
+    margin: 0px;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p {
+    margin: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a:hover, a:focus {
+    color: #ff6347; 
+    text-decoration: none;
+}
+
+.resaltado_verde {
+    color: #27ae60; /* Cambiar el color a verde azulado */
+}
+
+
+.imagen-lateral {
+    position: fixed;
+    bottom: 303px; /* Cambia este valor para ajustar la posición vertical */
+    right: 0; /* Colocar la imagen en el lado derecho */
+    width: 450px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.imagen-centrada {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .imagen-centrada {
+        width: 700px;
+    }
+}
+
+.imagen-derecha {
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* La mitad de la altura del contenedor */
+    left: 81%; /* La mitad del ancho del contenedor */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+}
+
+
+/* Estilos para la barra de navegación */
+.barra-superior {
+    background-color: #2ecc71; /* Verde claro */
+    text-align: center;
+    padding: 10px 0; /* Añadir espacio alrededor de los enlaces */
+}
+
+/* Estilos para los enlaces */
+.barra-superior a {
+    color: #fff; /* Texto blanco */
+    font-family: 'Montserrat', sans-serif; /* Fuente elegida */
+    font-size: 18px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio entre los enlaces */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #27ae60; /* Verde oscuro */
+    transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+}
+
+/* Estilos al pasar el mouse sobre los enlaces */
+.barra-superior a:hover {
+    background-color: #27ae60;; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+@media (min-width: 769px) {
+    .barra-superior {
+        max-width: 9999px; /* Establecer un ancho máximo para la barra de navegación */
+        margin: 0 auto; /* Centrar la barra de navegación */
+    }
+
+    .barra-superior a {
+        padding: 10px 12px; /* Reducir el espacio interno del botón */
+    }
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.gender-selection {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2ecc71;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px #2ecc71;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background: #2ecc71;
+}
+
+.imc {
+    width: 97%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    min-height: 433px; /* Ajusta este valor para cambiar la altura mínima del cuadro de texto */
+}
+
+
+.info-text {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.maintext {
+    width: 97%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    min-height: 850px; /* Ajusta este valor para cambiar la altura mínima del cuadro de texto */
+}
+
+
+.lefttext {
+    width: 60%; /* Ajusta este valor para cambiar el ancho del cuadro de texto */
+    margin-right: 50%; /* Ajusta este valor para cambiar la posición inicial del cuadro de texto */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: justify; /* Justifica el texto */
+    min-height: 975px; /* Ajusta este valor para cambiar la altura mínima del cuadro de texto */
+}
+
+.texto-izquierda {
+    float: left;
+    width: 50%;
+}
+
+.imagen-abajo {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.maintext h3:before {
+    content: "";
+    display: inline-block;
+    height: 80px; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    width: 80px; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    background-image: url('ecofit.ico');
+    background-size: contain;
+    margin-right: 10px; /* Ajusta este valor para cambiar el espacio entre la imagen y el texto */
+    background-repeat: no-repeat;
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EcoFit</title>
+    <meta name="description" content="EcoFit ayuda a conocer tu IMC y alcanzar tu peso ideal de manera saludable.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="srcs/ecofit.ico">
+
+</head>
+
+<body>  
+
+    <nav class="barra-superior">
+        <a href="Inicio.html">Inicio</a>
+        <a href="peso_ideal.html">Mi Peso Ideal</a>
+        <a href="consulta_de_peso.html"> Consulta de Peso</a>
+        <a href="imc.html">IMC</a>
+    </nav>
+    
+    <div class="imc">
+        <div class="container">
+            <h1>Calculadora de <span class="resaltado_verde">IMC</span></h1>
+            <input type="number" id="txtPeso" placeholder="Peso en kg">
+            <input type="number" id="txtAltura" placeholder="Altura en cm">
+            <button id="btnCalcular">Calcular</button>
+            <h2 id="res"></h2>
+            <p id="situacion"></p>
+            <div class="gender-selection">
+                <input type="radio" id="rbtnHombre" name="gender" checked>
+                <label for="rbtnHombre">Hombre</label>
+                <input type="radio" id="rbtnMujer" name="gender">
+                <label for="rbtnMujer">Mujer</label>
+            </div>
+        </div>
+
+        <h2>Indice de Masa Corporal (<span class="resaltado_verde">IMC</span>)</h2>
+        <h1>¿Qué es el IMC?</h1>
+        <p class="info-text">
+            El Índice de Masa Corporal (IMC) es un método utilizado para estimar la cantidad de grasa corporal que tiene una persona, y determinar por tanto si el peso está dentro del rango normal, o por el contrario, se tiene sobrepeso o delgadez. Para ello, se pone en relación la estatura y el peso actual del individuo. Se calcula dividiendo el peso de una persona en kilogramos por el cuadrado de su estatura en metros.
+        </p>
+        <h2>Consejos para mantener un IMC saludable</h2>
+        <ul class="info-text">
+            <li>Establece objetivos realistas de peso saludable.</li>
+            <li>Adopta una dieta equilibrada. Opta por una dieta rica en frutas, verduras, granos enteros y proteínas magras.</li>
+            <li>Controla las porciones. Ser consciente de las porciones es crucial.</li>
+            <li>Hidrátate adecuadamente.</li>
+            <li>Incorpora la actividad física.</li>
+            <li>Prioriza el sueño.</li>
+            <li>Gestiona el estrés.</li>
+            <li>Mantén un registro de comidas.</li>
+        </ul>
+        <h2>Importancia de la actividad física regular</h2>
+        <p class="info-text">
+        La actividad física regular es uno de los factores más importantes para mantener un IMC saludable y mejorar la salud en general. Aquí te dejo algunos beneficios:
+        </p>
+        <ul class="info-text">
+            <li><strong>Mejora la salud cardiovascular:</strong> La actividad física regular puede ayudar a reducir el riesgo de enfermedades del corazón y mejorar la salud cardiovascular.</li>
+            <li><strong>Fortalece los huesos y los músculos:</strong> Los ejercicios de fortalecimiento, como levantamiento de pesas o yoga, pueden ayudar a fortalecer los huesos y los músculos.</li>
+            <li><strong>Mejora la salud mental:</strong> La actividad física puede ayudar a reducir los síntomas de la depresión y la ansiedad, mejorar el estado de ánimo y aumentar la autoestima.</li>
+            <li><strong>Control del peso:</strong> Junto con una dieta saludable, la actividad física es esencial para mantener un peso saludable y prevenir el sobrepeso y la obesidad.</li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

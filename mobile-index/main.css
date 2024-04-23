@@ -170,7 +170,7 @@ input[type="radio"]:checked {
 }
 
 .maintext {
-    width: 97%;
+    width: 100%;
     margin: auto;
     background-color: #fff;
     padding: 20px;
@@ -179,6 +179,11 @@ input[type="radio"]:checked {
     min-height: 850px; /* Ajusta este valor para cambiar la altura mínima del cuadro de texto */
 }
 
+@media screen and (min-width: 600px) {
+    .maintext {
+        width: 97%;
+    }
+}
 
 .lefttext {
     width: 60%; /* Ajusta este valor para cambiar el ancho del cuadro de texto */

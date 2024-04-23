@@ -209,7 +209,7 @@ input[type="radio"]:checked {
     display: inline-block;
     height: 80px; /* Ajusta este valor para cambiar el tamaño de la imagen */
     width: 80px; /* Ajusta este valor para cambiar el tamaño de la imagen */
-    background-image: url('ecofit.ico');
+    background-image: url('srcs/ecofit.ico');
     background-size: contain;
     margin-right: 10px; /* Ajusta este valor para cambiar el espacio entre la imagen y el texto */
     background-repeat: no-repeat;

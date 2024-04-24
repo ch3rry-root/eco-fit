@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     color: #333; /* Color de texto */
-    font-size: 16px; /* Tamaño del texto */
-    line-height: 1.6; /* Espacio texto*/
+    font-size: 15px; /* Tamaño del texto */
+    line-height: 1.5; /* Espacio texto*/
 }
 
 h1, h2, h3 {
@@ -17,7 +17,7 @@ h1, h2, h3 {
 
 p {
     margin: 0px;
-    margin-top: 0.5em;
+    margin-top: 0.1em;
     margin-bottom: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,12 +57,9 @@ a:hover, a:focus {
 }
 
 .imagen-derecha {
-    position: absolute; /* Establece la posición absoluta */
-    top: 50%; /* La mitad de la altura del contenedor */
-    left: 81%; /* La mitad del ancho del contenedor */
-    transform: translate(-50%, -50%); /* Centra la imagen */
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+    display: block; /* Mostrar como bloque para centrar */
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 80%; /* Ancho del 80% para dispositivos móviles */
 }
 
 
@@ -177,6 +174,8 @@ input[type="radio"]:checked {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     min-height: 850px; /* Ajusta este valor para cambiar la altura mínima del cuadro de texto */
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+
 }
 
 @media screen and (min-width: 600px) {
